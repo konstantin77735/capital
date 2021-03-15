@@ -47,9 +47,25 @@
     .what-was-done {
         grid-template-columns: 344px minmax(500px, 650px) !important;
 
+        grid-template-rows: auto !important;
+
         .grid-container {
-            grid-column-gap: 5px !important;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 246px)) !important;
+            grid-template-columns: 1fr 1fr !important;
+            grid-column-gap: 25px;
+
+            &__item {
+
+                .what-was-done__item-title,
+                span {
+                    max-width: 90% !important;
+                    display: block !important;
+                    margin: 0 auto 15px auto !important;
+                }
+            }
+        }
+
+        br {
+            display: none !important;
         }
     }
 }
@@ -57,9 +73,34 @@
 @media screen and (max-width: 1000px) {
     .what-was-done {
         grid-template-columns: 1fr !important;
+        margin-top: 50px !important;
 
         .grid-container {
-            grid-template-columns: repeat(auto-fit, minmax(100px, 320px)) !important;
+            margin-top: 165px !important;
+            grid-column-gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+
+            &__item {
+                height: 45% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .what-was-done {
+        .grid-container {
+
+
+            &__item {
+
+                .what-was-done__item-title,
+                span {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    margin: 0 auto !important;
+                }
+            }
         }
     }
 }
@@ -68,6 +109,7 @@
     .what-was-done {
         grid-template-columns: 1fr !important;
         max-width: 90% !important;
+        margin-top: 100px !important;
 
         &__title {
             font-size: 5rem !important;
@@ -81,13 +123,27 @@
             top: -100px !important;
             grid-template-columns: minmax(100px, 330px) !important;
             grid-auto-rows: 227px !important;
-            max-width: 95% !important;
+
+
+            max-width: 100% !important;
+            width: 100% !important;
+            grid-template-columns: 1fr !important;
+            grid-auto-rows: auto !important;
 
             &__item {
                 font-size: 3rem !important;
                 line-height: 4rem !important;
                 padding: 40px 10px !important;
                 height: 75% !important;
+
+                padding: 30px 0px 0 0px !important;
+                height: auto !important;
+
+                .what-was-done__item-title,
+                span {
+                    font-size: 3rem !important;
+                    line-height: 4rem !important;
+                }
 
 
             }

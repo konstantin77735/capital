@@ -103,6 +103,10 @@ $titleMaxWidth: 875px;
         .headline {
             grid-template-columns: 130px minmax(352px, 437px);
 
+            .logo {
+                max-width: 100px;
+            }
+
             .page-title {
                 max-width: 464px;
                 font-size: 4.5rem;
@@ -116,20 +120,52 @@ $titleMaxWidth: 875px;
 @media screen and (max-width: 768px) {
     .nav {
         .headline {
+
+            .logo {
+                max-width: 75px;
+            }
+
             .page-title {
                 justify-self: start !important;
             }
         }
+
+        .offers {
+            grid-template-areas:
+                'case'
+                '.'
+                'offer' !important;
+            grid-template-columns: 1fr !important;
+            grid-row-gap: 20px !important;
+            top: 5px !important;
+        }
     }
 
-    .offers {
-        grid-template-areas:
-            'case'
-            '.'
-            'offer' !important;
-        grid-template-columns: 1fr !important;
-        grid-row-gap: 20px !important;
-        top: 5px !important;
+    br {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        min-height: 200px !important;
+
+        .headline {
+            grid-template-columns: minmax(30px, 35px) minmax(100px, 282px) !important;
+
+            .logo {
+                width: auto !important;
+                max-width: 50px !important;
+            }
+
+            .page-title {
+                max-width: 282px !important;
+            }
+        }
+
+        .offers {
+            grid-row-gap: 10px !important;
+        }
     }
 }
 

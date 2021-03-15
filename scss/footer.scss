@@ -26,6 +26,9 @@
 .footer:nth-of-type(3) {
     position: relative;
     z-index: 1;
+    background: #272727;
+    padding: 50px 5% 0 5%;
+    margin: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -33,6 +36,10 @@
         .arrow {
             width: 80%;
         }
+    }
+
+    br {
+        display: block !important;
     }
 }
 
@@ -52,7 +59,10 @@
     }
 
     .footer:nth-of-type(3) {
-        margin-top: 40px;
+        background: #272727;
+        width: 90%;
+        padding: 50px 5% 0 5%;
+        margin: 0;
     }
 }
 
