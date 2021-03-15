@@ -889,6 +889,15 @@ body {
     line-height: 2.4rem !important;
   }
 
+  .total .grid-container {
+    margin: 25px auto 0 auto;
+  }
+
+  .total .grid-container .schedule {
+    font-size: 2.5rem !important;
+    line-height: 3.8rem !important;
+  }
+
   html,
   body {
     font-size: 5px;
@@ -1072,6 +1081,19 @@ body {
     left: -55px !important;
     right: auto !important;
     top: -5px !important;
+  }
+
+  .total {
+    padding: 35px 25px;
+  }
+
+  .total .grid-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .total .grid-container .schedule {
+    font-size: 2.5rem !important;
+    line-height: 3.8rem !important;
   }
 }
 

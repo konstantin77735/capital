@@ -37,6 +37,36 @@
 
 }
 
+@media screen and (max-width: 650px) {
+    .total {
+        .grid-container {
+            margin: 25px auto 0 auto;
+            
+            .schedule {
+                font-size: 2.5rem !important;
+                line-height: 3.8rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .total {
+        padding: 35px 25px;
+
+        .grid-container {
+
+            grid-template-columns: 1fr !important;
+
+            .schedule {
+                font-size: 2.5rem !important;
+                line-height: 3.8rem !important;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 350px) {
     .total {
         margin: 53px auto 0 auto !important;
