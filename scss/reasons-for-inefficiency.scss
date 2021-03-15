@@ -1,0 +1,61 @@
+.reasons-for-inefficiency {
+    max-width: 90%;
+    margin: auto;
+
+    &__title {
+        margin: 0 !important;
+        font-size: 6rem !important;
+    }
+
+    .epicrisis {
+        color: #fff;
+        font-size: 1.5rem;
+        display: block;
+        margin-top: 50px;
+        margin-left: 65px;
+
+        position: relative;
+
+        .ex-mark {
+            font-size: 11rem;
+            position: absolute;
+            top: -45px;
+            left: -65px;
+            color: #2FFFFF;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .reasons-for-inefficiency {
+        margin-top: 40px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .reasons-for-inefficiency {
+
+        .epicrisis {
+            margin-top: 60px;
+            margin-left: 30px;
+
+            .ex-mark {
+                left: -25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .reasons-for-inefficiency {
+
+        .epicrisis {
+            font-size: 3rem !important;
+
+            .ex-mark {
+                top: 0 !important;
+            }
+        }
+
+    }
+}
