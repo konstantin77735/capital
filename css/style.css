@@ -1,5 +1,7 @@
 
 
+
+
 @charset "UTF-8";
 
 /* find-a-specialist: */
@@ -111,7 +113,7 @@
   opacity: 0.4;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'case . offer';
+          grid-template-areas: 'case . offer';
   -ms-grid-columns: 217px 60px 630px;
   grid-template-columns: 217px 60px 630px;
   position: relative;
@@ -920,8 +922,8 @@ body {
   }
 
   .nav .offers {
-    -ms-grid-rows: auto 20px auto 20px auto !important;
-        grid-template-areas: 'case'
+        -ms-grid-rows: auto 20px auto 20px auto !important;
+            grid-template-areas: 'case'
  '.'
  'offer' !important;
     -ms-grid-columns: 1fr !important;
@@ -1055,7 +1057,7 @@ body {
     grid-template-columns: 1fr;
     -ms-grid-rows: 20px 10px 40px;
     grid-template-rows: 20px 10px 40px;
-        grid-template-areas: 'case'
+            grid-template-areas: 'case'
  '.'
  'offer';
     top: 0;
