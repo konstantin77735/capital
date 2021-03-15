@@ -263,7 +263,7 @@
   position: relative;
 }
 
-.total__content-container {
+.total .grid-container {
   color: #fff;
   grid-template-columns: repeat(auto-fit, minmax(100px, 570px)) !important;
   max-width: 100% !important;
@@ -739,6 +739,10 @@ body {
     display: none !important;
   }
 
+  .total .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 417px)) !important;
+  }
+
   html,
   body {
     font-size: 8px;
@@ -795,6 +799,12 @@ body {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .total .grid-container {
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -1133,13 +1143,14 @@ body {
 
   .total {
     margin: 53px auto 0 auto !important;
-    padding: 35px;
     max-height: initial;
+    padding: 35px 20px;
   }
 
-  .total .schedule {
-    font-size: 3rem !important;
-    line-height: 4.5rem;
+  .total .grid-container .schedule {
+    padding-left: 15px !important;
+    font-size: 3.2rem !important;
+    line-height: 4.7rem !important;
   }
 
   .total__title {
