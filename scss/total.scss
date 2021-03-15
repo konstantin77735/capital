@@ -40,13 +40,13 @@
 @media screen and (max-width: 350px) {
     .total {
         margin: 53px auto 0 auto !important;
-        max-height: 390px;
 
+        padding: 35px;
+        max-height: initial;
 
-
-        &__overlay {
-            top: 80px;
-            height: 75vh;
+        .schedule {
+            font-size: 3rem !important;
+            line-height: 4.5rem;
         }
 
         &__title {
