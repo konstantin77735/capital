@@ -3,18 +3,12 @@
     margin: 85px auto 0 auto !important;
     position: relative;
 
-    &__overlay {
-        position: absolute;
-        height: 115vh;
-        width: 111.5%;
-        left: -6%;
-        right: 0;
-        top: 20%;
-        bottom: 0;
-        margin: auto;
-        z-index: 0;
-        background: #272727;
-    }
+    overflow: hidden;
+    margin: 85px auto 0 auto !important;
+    max-width: 100% !important;
+    padding: 35px 50px;
+    background: #272727;
+
 
     &__title {
         margin: 0 !important;
