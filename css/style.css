@@ -948,6 +948,10 @@ body {
     width: 92% !important;
   }
 
+  .nav .headline .logo {
+    max-width: 35px !important;
+  }
+
   .nav .headline .page-title {
     max-width: 150px !important;
     max-width: 255px !important;
@@ -1045,6 +1049,10 @@ body {
 }
 
 @media screen and (max-width: 350px) {
+  .nav {
+    min-height: 95px !important;
+  }
+
   .nav .headline {
     grid-template-columns: 0.25fr 0.75fr;
   }
@@ -1052,10 +1060,13 @@ body {
   .nav .headline .page-title {
     justify-self: start !important;
     max-width: 163px !important;
+    justify-self: end !important;
+    font-size: 3.5rem;
   }
 
   .what-was-done {
-    max-height: 560px;
+    max-height: 380px;
+    margin-top: 110px !important;
   }
 
   .what-was-done__title {
@@ -1063,13 +1074,14 @@ body {
   }
 
   .what-was-done .grid-container {
-    grid-auto-rows: 190px !important;
-    top: -170px !important;
+    grid-auto-rows: 210px !important;
+    top: -150px !important;
+    grid-row-gap: 0 !important;
   }
 
   .what-was-done .grid-container__item {
-    max-width: 90% !important;
-    height: 65% !important;
+    height: 70% !important;
+    max-width: 100% !important;
   }
 
   .footer {

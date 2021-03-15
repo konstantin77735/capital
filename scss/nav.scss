@@ -176,6 +176,10 @@ $titleMaxWidth: 875px;
         .headline {
             width: 92% !important;
 
+            .logo {
+                max-width: 35px !important;
+            }
+
             .page-title {
                 max-width: 150px !important;
                 max-width: 255px !important;
@@ -191,12 +195,16 @@ $titleMaxWidth: 875px;
 
 @media screen and (max-width: 350px) {
     .nav {
+        min-height: 95px !important;
+
         .headline {
             grid-template-columns: 0.25fr 0.75fr;
 
             .page-title {
                 justify-self: start !important;
                 max-width: 163px !important;
+                justify-self: end !important;
+                font-size: 3.5rem;
             }
         }
     }

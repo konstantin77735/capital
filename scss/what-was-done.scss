@@ -111,6 +111,8 @@
         max-width: 90% !important;
         margin-top: 100px !important;
 
+
+
         &__title {
             font-size: 5rem !important;
 
@@ -153,20 +155,22 @@
 
 @media screen and (max-width: 350px) {
     .what-was-done {
-        max-height: 560px;
+        max-height: 380px;
+        margin-top: 110px !important;
 
         &__title {
             top: -100px !important;
         }
 
         .grid-container {
-            grid-auto-rows: 190px !important;
-            top: -170px !important;
+            grid-auto-rows: 210px !important;
+            top: -150px !important;
+            grid-row-gap: 0 !important;
 
 
             &__item {
-                max-width: 90% !important;
-                height: 65% !important;
+                height: 70% !important;
+                max-width: 100% !important;
             }
         }
 
