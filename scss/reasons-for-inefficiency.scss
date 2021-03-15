@@ -37,7 +37,17 @@
 
         .epicrisis {
             font-size: 2rem !important;
+            margin-top: 25px;
+            margin-left: 35px;
+
+            .ex-mark {
+                font-size: 8rem;
+                top: -15px;
+                left: -32px;
+            }
         }
+
+
     }
 }
 
@@ -50,6 +60,20 @@
 
             .ex-mark {
                 left: -25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .reasons-for-inefficiency {
+        .epicrisis {
+            margin-top: 15px;
+            margin-left: 35px;
+
+            .ex-mark {
+                top: -7px;
+                left: -32px;
             }
         }
     }
