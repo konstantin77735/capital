@@ -31,6 +31,15 @@
     margin: 0;
 }
 
+@media screen and (max-width: 1300px) {
+    .footer {
+        .logo {
+            max-width: 100px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 1000px) {
     .footer {
         .arrow {
@@ -48,6 +57,10 @@
         width: 85%;
         margin: 0 auto;
 
+        .logo{
+            max-width: 55px;
+        }
+        
         .arrow {
             max-width: 70%;
         }
