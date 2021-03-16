@@ -34,52 +34,17 @@ $titleMaxWidth: 875px;
         color: #FFF;
         opacity: 0.4;
         display: grid;
-        grid-template-areas: 'case . offer';
-        grid-template-columns: 217px 60px 630px;
+        justify-items: start;
 
         position: relative;
         top: -55px;
         margin: 0;
-    }
 
-    .case {
-        font-size: 3rem !important;
-        grid-area: case;
+
     }
 
     .offer {
         font-size: 3rem !important;
-        grid-area: offer;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .nav {
-        min-height: 130px;
-
-
-        .headline {
-            grid-template-columns: 1fr 1fr;
-
-            .logo {
-                max-width: 35px;
-            }
-
-            .page-title {
-                font-size: 4rem;
-                max-width: 252px;
-            }
-        }
-
-        .offers {
-            grid-template-columns: 1fr;
-            grid-template-rows: 20px 10px 40px;
-            grid-template-areas:
-                'case'
-                '.'
-                'offer';
-            top: 0;
-        }
     }
 }
 
@@ -90,10 +55,6 @@ $titleMaxWidth: 875px;
                 justify-self: end;
                 max-width: 627px;
             }
-        }
-
-        .offers {
-            grid-template-columns: 217px 60px minmax(393px, 500px);
         }
     }
 }
@@ -119,6 +80,8 @@ $titleMaxWidth: 875px;
 
 @media screen and (max-width: 768px) {
     .nav {
+        min-height: 175px;
+
         .headline {
 
             .logo {
@@ -131,23 +94,14 @@ $titleMaxWidth: 875px;
         }
 
         .offers {
-            grid-template-areas:
-                'case'
-                '.'
-                'offer' !important;
-            grid-template-columns: 1fr !important;
-            grid-row-gap: 20px !important;
+
             top: 5px !important;
         }
-    }
-
-    br {
-        display: none !important;
     }
 }
 
 @media screen and (max-width: 650px) {
-    nav {
+   .nav {
         min-height: 200px !important;
 
         .headline {
@@ -167,28 +121,42 @@ $titleMaxWidth: 875px;
             grid-row-gap: 10px !important;
         }
     }
+    
+    
 }
 
 @media screen and (max-width: 550px) {
     .nav {
-
+        min-height: 130px;
 
         .headline {
             width: 92% !important;
+            grid-template-columns: 1fr 1fr;
+
 
             .logo {
                 max-width: 35px !important;
+
             }
 
             .page-title {
-                max-width: 150px !important;
-                max-width: 255px !important;
+
+                font-size: 4rem;
+                max-width: 252px !important;
             }
         }
 
         .offers {
             margin-top: 40px !important;
             grid-row-gap: 0px !important;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 20px 10px 40px;
+            grid-template-areas:
+                'case'
+                '.'
+                'offer';
+            top: 0;
         }
     }
 }
