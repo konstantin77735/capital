@@ -1,5 +1,4 @@
 
-
 @charset "UTF-8";
 
 /* find-a-specialist: */
@@ -216,7 +215,7 @@
 }
 
 .footer .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
 }
@@ -1274,6 +1273,10 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .footer .logo {
+    font-size: 3rem;
   }
 
   .footer .arrow {
